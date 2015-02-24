@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemDetails>
+	<item code="0001">
+		<itemName>Milk</itemName>
+		<itemType>N</itemType>
+		<itemCost>349</itemCost>
+	</item>
+	
+	<item code="0002">
+		<itemName>Bread</itemName>
+		<itemType>N</itemType>
+		<itemCost>0</itemCost>
+	</item>
+
+	<item code="0003">
+		<itemName>Car</itemName>
+		<itemType>L</itemType>
+		<itemCost>25000</itemCost>
+	</item>
+
+
+</itemDetails>
