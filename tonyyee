@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class ComputeTotalCost
+{
+   public static void main(String[] args)
+   {
+      final double NECESSARY_RATE = 0.01;      // Tax rates
+      final double LUXURY_RATE = 0.09;
+
+      char   item_status;
+      double cost = 0;
+      double tax = 0;
+      double total_cost = 0;
+ 
+      Scanner in = new Scanner(System.in); // Construct Scanner object  
+ 
+      System.out.print("Enter Amount (S or M) = ");
+      cost = in.nextDouble();             // Read in cost of the item
+      System.out.print("Enter Nesssary or Luxury (N or L) = ");
+      item_status = in.next().charAt(0);         // Read in next char into status
+
+      if ( item_status == 'N' )
+         tax = cost * NECESSARY_RATE;
+      } 
+      else
+      {  
+         if ( item_status == 'L' )
+            tax = cost * LUXURY_RATE;
+         } 
+      }
+
+      total_cost = cost + tax;
+
+      // Formulate the output in $ and cents
+      DecimalFormat dFormat = new DecimalFormat("####,###,###.00");
+      System.out.println("Total Amount (including tax) is $" + dFormat.format(total_cost);
+   }
+}
+
+
+Enter file contents here
